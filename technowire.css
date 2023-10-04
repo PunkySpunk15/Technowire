@@ -1,9 +1,65 @@
-div{
-    text-align: center;
+html{font-family: agency fb;}
+.container {  display: grid;
+    grid-template-columns: 0.9fr 2.1fr 0.4fr 0.5fr;
+    grid-template-rows: 0.5fr 1.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". header-img . navArea"
+      ". main-content . navArea";
 }
-p{
+.navArea {
+    grid-area: navArea;
+    background: #00daff;
+    height:140%;
+    display: grid;
+    justify-items: center;
+    border-left: 2px groove #00b7ff;
+}
+.header-img { grid-area: header-img; }
+.main-content { grid-area: main-content; }  
+div{text-align: center;}
+p{margin-top: 100px;white-space: pre;}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li a{
+    text-decoration: none;
+    display: block;
+    color: #04d1f5;
     text-align: center;
-    margin-top: 100px;
-    white-space: pre;
-    font-family: agency fb;
+    font-size: 130%;
+    padding: 5px;
+    
+}
+li{
+    background-color: black;
+    border: 2px ridge #00b7ff;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 35px;
+    transition: all.3s ease-in-out;
+}
+#firstchild{
+    margin-top: 20px;
+}
+li a:hover{color: white;}
+li:hover{
+    background: url(https://i.imgur.com/RO0seBO.gif);
+    background-position: -80px -50px;
+    transform: scale(0.9);
+}
+body{margin:0;}
+footer{
+    background:url(https://i.imgur.com/rYedSOO.png);
+    border: groove 2px #00b7ff;
+    color: white;
+    position: relative;
+    top: 204px;
+    padding: 5px;
+    font-size: medium;
+    white-space:pre;
+    text-align: center;
 }
