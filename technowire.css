@@ -86,7 +86,8 @@ body {
     grid-area: 5 / 1 / 6 / 12;
     margin-top: 20px;
     text-shadow: 2px 0 0 #2200ff46;
-    padding-left: 320px;
+    padding-left: 170px;
+
 }
 
 .timeline {
@@ -225,18 +226,27 @@ body {
     font-weight: bold;
 }
 
-.info {
-    font-weight: 500;
-    margin: 5px;
-}
-
-
 .Name,
 .year {
     text-align: center;
 }
 
+.info {
+    font-weight: 500;
+    margin: 5px;
+}
+
+@media screen and (min-width:1200px) {}
+
+@media screen and (max-width: 1450px) and (min-width:1200px) {
+    .footer {
+        padding-left: 320px;
+    }
+}
+
+
 @media screen and (max-width:2000px) and (min-width:770px) {
+
 
     .feet {
         display: none;
@@ -482,9 +492,11 @@ body {
         overflow-x: hidden;
 
     }
-    .noscroll{
+
+    .noscroll {
         overflow-y: hidden;
     }
+
     :root {
         --bar-width: 60px;
         --bar-height: 10px;
