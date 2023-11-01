@@ -79,14 +79,14 @@ body {
 .footer {
     background: url(bluetech.png);
     border: groove 2px #00b7ff;
-    color: black;
+    color: white;
     padding-top: 5px;
     font-size: medium;
     white-space: pre;
     grid-area: 5 / 1 / 6 / 12;
     margin-top: 20px;
     text-shadow: 2px 0 0 #2200ff46;
-    padding-left: 170px;
+    text-align: center;
 
 }
 
