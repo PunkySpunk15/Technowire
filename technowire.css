@@ -84,10 +84,10 @@ body {
     padding-top: 5px;
     font-size: medium;
     white-space: pre;
-    text-align: center;
     grid-area: 5 / 1 / 6 / 12;
     margin-top: 20px;
     text-shadow: 2px 0 0 #2200ff46;
+    padding-left: 320px;
 }
 
 .timeline {
